@@ -6,9 +6,9 @@ public class King extends Character{
     }
 
 
-    public void kick(Character whoKick, Character whoIsKicked) {
+    public void kick(Character whoIsKicked) {
          NobleKick nobleKick = new NobleKick();
-         nobleKick.kick(whoKick ,whoIsKicked);
+         nobleKick.kick(this ,whoIsKicked);
 
 
 

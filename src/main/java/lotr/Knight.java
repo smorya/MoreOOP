@@ -7,9 +7,9 @@ public class Knight extends Character {
         super(new Random().nextInt(13) + 2, new Random().nextInt(13) + 2);
     }
 
-    public void kick(Character whoKick, Character whoIsKicked) {
+    public void kick(Character whoIsKicked) {
         NobleKick nobleKick = new NobleKick();
-        nobleKick.kick(whoKick ,whoIsKicked);
+        nobleKick.kick(this ,whoIsKicked);
 
     }
 }

@@ -5,9 +5,9 @@ public class Elf extends Character{
         super(10, 10);
     }
 
-    public void kick(Character whoKick, Character whoIsKicked) {
+    public void kick(Character whoIsKicked) {
         ElfKick elfKick = new ElfKick();
-        elfKick.kick(whoKick ,whoIsKicked);
+        elfKick.kick(this  ,whoIsKicked);
     }
 //
 }
