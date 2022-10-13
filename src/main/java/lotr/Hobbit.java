@@ -1,11 +1,15 @@
 package lotr;
 
-public class Hobbit{
-    private int hp = 3;
-    private int power = 0;
+public class Hobbit extends Character {
 
-    public String toCry(){
-        return "Don't beat me";
+    public Hobbit() {
+        super(3, 0);
+    }
 
+    @Override
+    public void kick(Character whoKick, Character whoIsKicked) {
+        System.out.println("Don't beat me");
     }
 }
+
+

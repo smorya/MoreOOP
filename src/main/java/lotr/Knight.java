@@ -6,6 +6,12 @@ public class Knight extends Character {
     public Knight() {
         super(new Random().nextInt(13) + 2, new Random().nextInt(13) + 2);
     }
+
+    public void kick(Character whoKick, Character whoIsKicked) {
+        NobleKick nobleKick = new NobleKick();
+        nobleKick.kick(whoKick ,whoIsKicked);
+
+    }
 }
 
 
